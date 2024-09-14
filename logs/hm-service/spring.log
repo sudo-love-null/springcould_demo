@@ -1,55 +1,56 @@
-11:05:13:411  INFO 9644 --- [main] com.hmall.HMallApplication               : Starting HMallApplication using Java 11.0.24 on xiaoyuan with PID 9644 (I:\学习资料\学习资料\SpringCloud\SpringCloud微服务—资料\day03-微服务01\资料\hmall\hm-service\target\classes started by 21551 in I:\学习资料\学习资料\SpringCloud\SpringCloud微服务—资料\day03-微服务01\资料\hmall)
-11:05:13:413 DEBUG 9644 --- [main] com.hmall.HMallApplication               : Running with Spring Boot v2.7.12, Spring v5.3.27
-11:05:13:414  INFO 9644 --- [main] com.hmall.HMallApplication               : The following 1 profile is active: "local"
-11:05:14:397  INFO 9644 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-11:05:14:400  INFO 9644 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-11:05:14:424  INFO 9644 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
-11:05:14:843  INFO 9644 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-11:05:15:000  INFO 9644 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1545 ms
-11:05:16:478  INFO 9644 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-11:05:16:734  INFO 9644 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-11:05:16:734  INFO 9644 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
-11:05:16:736  INFO 9644 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-11:05:16:760  INFO 9644 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-11:05:16:911  INFO 9644 --- [main] com.hmall.HMallApplication               : Started HMallApplication in 3.881 seconds (JVM running for 4.702)
-11:33:29:790  INFO 8524 --- [main] com.hmall.HMallApplication               : Starting HMallApplication using Java 11.0.24 on xiaoyuan with PID 8524 (I:\学习资料\学习资料\SpringCloud\SpringCloud微服务—资料\day03-微服务01\资料\hmall\hm-service\target\classes started by 21551 in I:\学习资料\学习资料\SpringCloud\SpringCloud微服务—资料\day03-微服务01\资料\hmall)
-11:33:29:793 DEBUG 8524 --- [main] com.hmall.HMallApplication               : Running with Spring Boot v2.7.12, Spring v5.3.27
-11:33:29:793  INFO 8524 --- [main] com.hmall.HMallApplication               : The following 1 profile is active: "local"
-11:33:30:443  INFO 8524 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-11:33:30:445  INFO 8524 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-11:33:30:465  INFO 8524 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
-11:33:30:835  INFO 8524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-11:33:30:836  INFO 8524 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
-11:33:30:837  INFO 8524 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-11:33:30:837  INFO 8524 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-11:33:30:842  INFO 8524 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
-11:33:30:852  INFO 8524 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-11:33:30:852  INFO 8524 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-11:33:30:947  INFO 8524 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-11:33:30:948  INFO 8524 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1116 ms
-11:33:32:402  INFO 8524 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-11:33:32:673  INFO 8524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-11:33:32:674  INFO 8524 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
-11:33:32:675  INFO 8524 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-11:33:32:700  INFO 8524 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-11:33:32:852  INFO 8524 --- [main] com.hmall.HMallApplication               : Started HMallApplication in 3.437 seconds (JVM running for 4.158)
-11:33:58:060  INFO 8524 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-11:33:58:062  INFO 8524 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-11:33:58:063  INFO 8524 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-11:33:58:180  INFO 8524 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-11:33:58:421  INFO 8524 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-11:33:58:426 DEBUG 8524 --- [http-nio-8080-exec-1] com.hmall.mapper.UserMapper.selectOne    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
-11:33:58:441 DEBUG 8524 --- [http-nio-8080-exec-1] com.hmall.mapper.UserMapper.selectOne    : ==> Parameters: jack(String)
-11:33:58:462 DEBUG 8524 --- [http-nio-8080-exec-1] com.hmall.mapper.UserMapper.selectOne    : <==      Total: 1
-11:33:58:700 DEBUG 8524 --- [http-nio-8080-exec-2] com.hmall.mapper.CartMapper.selectList   : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
-11:33:58:700 DEBUG 8524 --- [http-nio-8080-exec-2] com.hmall.mapper.CartMapper.selectList   : ==> Parameters: 1(Long)
-11:33:58:702 DEBUG 8524 --- [http-nio-8080-exec-2] com.hmall.mapper.CartMapper.selectList   : <==      Total: 0
-11:34:06:119 DEBUG 8524 --- [http-nio-8080-exec-6] c.h.m.ItemMapper.selectPage_mpCount      : ==>  Preparing: SELECT COUNT(*) FROM item WHERE (status = ?)
-11:34:06:120 DEBUG 8524 --- [http-nio-8080-exec-6] c.h.m.ItemMapper.selectPage_mpCount      : ==> Parameters: 1(Integer)
-11:34:06:154 DEBUG 8524 --- [http-nio-8080-exec-6] c.h.m.ItemMapper.selectPage_mpCount      : <==      Total: 1
-11:34:06:160 DEBUG 8524 --- [http-nio-8080-exec-6] com.hmall.mapper.ItemMapper.selectPage   : ==>  Preparing: SELECT id, name, price, stock, image, category, brand, spec, sold, comment_count, isAD, status, create_time, update_time, creater, updater FROM item WHERE (status = ?) ORDER BY update_time DESC LIMIT ?
-11:34:06:160 DEBUG 8524 --- [http-nio-8080-exec-6] com.hmall.mapper.ItemMapper.selectPage   : ==> Parameters: 1(Integer), 20(Long)
-11:34:06:463 DEBUG 8524 --- [http-nio-8080-exec-6] com.hmall.mapper.ItemMapper.selectPage   : <==      Total: 20
-13:11:27:541  WARN 8524 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h10m28s654ms351µs400ns).
-13:39:55:445  INFO 8524 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-13:39:55:454  INFO 8524 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+15:03:15:140  INFO 1452 --- [main] com.hmall.HMallApplication               : Starting HMallApplication using Java 11.0.24 on xiaoyuan with PID 1452 (I:\project\java\springcould\hmall\hm-service\target\classes started by 21551 in I:\project\java\springcould\hmall)
+15:03:15:146 DEBUG 1452 --- [main] com.hmall.HMallApplication               : Running with Spring Boot v2.7.12, Spring v5.3.27
+15:03:15:146  INFO 1452 --- [main] com.hmall.HMallApplication               : The following 1 profile is active: "dev"
+15:03:15:959  INFO 1452 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+15:03:15:961  INFO 1452 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+15:03:15:995  INFO 1452 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+15:03:16:474  INFO 1452 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+15:03:16:475  INFO 1452 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+15:03:16:475  INFO 1452 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+15:03:16:476  INFO 1452 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+15:03:16:480  INFO 1452 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+15:03:16:487  INFO 1452 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+15:03:16:487  INFO 1452 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+15:03:16:589  INFO 1452 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+15:03:16:589  INFO 1452 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1405 ms
+15:03:18:447  INFO 1452 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+15:03:18:973  WARN 1452 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+15:03:18:990  INFO 1452 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+15:03:19:003  INFO 1452 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+15:03:19:018 ERROR 1452 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+15:22:16:386  INFO 17320 --- [main] com.hmall.HMallApplication               : Starting HMallApplication using Java 11.0.24 on xiaoyuan with PID 17320 (I:\project\java\springcould\hmall\hm-service\target\classes started by 21551 in I:\project\java\springcould\hmall)
+15:22:16:388 DEBUG 17320 --- [main] com.hmall.HMallApplication               : Running with Spring Boot v2.7.12, Spring v5.3.27
+15:22:16:388  INFO 17320 --- [main] com.hmall.HMallApplication               : The following 1 profile is active: "dev"
+15:22:17:177  INFO 17320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+15:22:17:180  INFO 17320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+15:22:17:214  INFO 17320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+15:22:17:756  INFO 17320 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+15:22:17:757  INFO 17320 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+15:22:17:757  INFO 17320 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+15:22:17:758  INFO 17320 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+15:22:17:763  INFO 17320 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+15:22:17:771  INFO 17320 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+15:22:17:772  INFO 17320 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+15:22:17:898  INFO 17320 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+15:22:17:898  INFO 17320 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1466 ms
+15:22:19:906  INFO 17320 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+15:22:20:394  INFO 17320 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+15:22:20:395  INFO 17320 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+15:22:20:401  INFO 17320 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+15:22:20:452  INFO 17320 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+15:22:20:715  INFO 17320 --- [main] com.hmall.HMallApplication               : Started HMallApplication in 4.743 seconds (JVM running for 5.549)

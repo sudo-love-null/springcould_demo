@@ -1,154 +1,119 @@
-15:19:20:010  INFO 15232 --- [main] com.hmall.trade.TradeApplication         : Starting TradeApplication using Java 11.0.24 on xiaoyuan with PID 15232 (I:\project\java\springcould\hmall\trade-service\target\classes started by 21551 in I:\project\java\springcould\hmall)
-15:19:20:012 DEBUG 15232 --- [main] com.hmall.trade.TradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
-15:19:20:013  INFO 15232 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "dev"
-15:19:20:729  INFO 15232 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-15:19:20:731  INFO 15232 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-15:19:20:747  INFO 15232 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
-15:19:20:923  INFO 15232 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1eacfc99-13e6-3ce5-9d96-8d07ce46b449
-15:19:21:186  INFO 15232 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
-15:19:21:186  INFO 15232 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
-15:19:21:187  INFO 15232 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-15:19:21:187  INFO 15232 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-15:19:21:190  INFO 15232 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
-15:19:21:196  INFO 15232 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-15:19:21:196  INFO 15232 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-15:19:21:285  INFO 15232 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-15:19:21:285  INFO 15232 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1229 ms
-15:19:21:334  WARN 15232 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController' defined in file [I:\project\java\springcould\hmall\trade-service\target\classes\com\hmall\trade\controller\OrderController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderServiceImpl' defined in file [I:\project\java\springcould\hmall\trade-service\target\classes\com\hmall\trade\service\impl\OrderServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.api.client.ItemClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-15:19:21:337  INFO 15232 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-15:19:21:349  INFO 15232 --- [main] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-15:19:21:359 ERROR 15232 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Parameter 0 of constructor in com.hmall.trade.service.impl.OrderServiceImpl required a bean of type 'com.hmall.api.client.ItemClient' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'com.hmall.api.client.ItemClient' in your configuration.
-
-15:22:48:121  INFO 16032 --- [main] com.hmall.trade.TradeApplication         : Starting TradeApplication using Java 11.0.24 on xiaoyuan with PID 16032 (I:\project\java\springcould\hmall\trade-service\target\classes started by 21551 in I:\project\java\springcould\hmall)
-15:22:48:123 DEBUG 16032 --- [main] com.hmall.trade.TradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
-15:22:48:123  INFO 16032 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "dev"
-15:22:48:792  INFO 16032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-15:22:48:794  INFO 16032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-15:22:48:811  INFO 16032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
-15:22:49:019  INFO 16032 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1eacfc99-13e6-3ce5-9d96-8d07ce46b449
-15:22:49:278  INFO 16032 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
-15:22:49:279  INFO 16032 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
-15:22:49:279  INFO 16032 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-15:22:49:279  INFO 16032 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-15:22:49:284  INFO 16032 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
-15:22:49:291  INFO 16032 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-15:22:49:292  INFO 16032 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-15:22:49:382  INFO 16032 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-15:22:49:382  INFO 16032 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1218 ms
-15:22:49:427  WARN 16032 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController' defined in file [I:\project\java\springcould\hmall\trade-service\target\classes\com\hmall\trade\controller\OrderController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderServiceImpl' defined in file [I:\project\java\springcould\hmall\trade-service\target\classes\com\hmall\trade\service\impl\OrderServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.api.client.ItemClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-15:22:49:429  INFO 16032 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-15:22:49:441  INFO 16032 --- [main] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-15:22:49:452 ERROR 16032 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Parameter 0 of constructor in com.hmall.trade.service.impl.OrderServiceImpl required a bean of type 'com.hmall.api.client.ItemClient' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'com.hmall.api.client.ItemClient' in your configuration.
-
-15:27:45:104  INFO 17176 --- [main] com.hmall.trade.TradeApplication         : Starting TradeApplication using Java 11.0.24 on xiaoyuan with PID 17176 (I:\project\java\springcould\hmall\trade-service\target\classes started by 21551 in I:\project\java\springcould\hmall)
-15:27:45:106 DEBUG 17176 --- [main] com.hmall.trade.TradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
-15:27:45:106  INFO 17176 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "dev"
-15:27:45:733  INFO 17176 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-15:27:45:735  INFO 17176 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-15:27:45:749  INFO 17176 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
-15:27:45:933  INFO 17176 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5dddde66-cf80-384f-b1a2-3ce92099b859
-15:27:46:199  INFO 17176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
-15:27:46:200  INFO 17176 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
-15:27:46:200  INFO 17176 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-15:27:46:200  INFO 17176 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-15:27:46:203  INFO 17176 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
-15:27:46:209  INFO 17176 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-15:27:46:209  INFO 17176 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-15:27:46:297  INFO 17176 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-15:27:46:297  INFO 17176 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1152 ms
-15:27:46:445  INFO 17176 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
-15:27:47:236  INFO 17176 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
-15:27:47:653  INFO 17176 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-15:27:48:244  INFO 17176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
-15:27:48:454  INFO 17176 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
-15:27:48:456  INFO 17176 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-15:27:48:472  INFO 17176 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-15:27:48:573  INFO 17176 --- [main] com.hmall.trade.TradeApplication         : Started TradeApplication in 4.173 seconds (JVM running for 4.932)
-15:40:38:715  INFO 18732 --- [main] com.hmall.trade.TradeApplication         : Starting TradeApplication using Java 11.0.24 on xiaoyuan with PID 18732 (I:\project\java\springcould\hmall\trade-service\target\classes started by 21551 in I:\project\java\springcould\hmall)
-15:40:38:717 DEBUG 18732 --- [main] com.hmall.trade.TradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
-15:40:38:717  INFO 18732 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "dev"
-15:40:39:356  INFO 18732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-15:40:39:358  INFO 18732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-15:40:39:372  INFO 18732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
-15:40:39:544  INFO 18732 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5dddde66-cf80-384f-b1a2-3ce92099b859
-15:40:39:800  INFO 18732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
-15:40:39:800  INFO 18732 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
-15:40:39:801  INFO 18732 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-15:40:39:801  INFO 18732 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-15:40:39:803  INFO 18732 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
-15:40:39:810  INFO 18732 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-15:40:39:810  INFO 18732 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-15:40:39:909  INFO 18732 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-15:40:39:909  INFO 18732 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1149 ms
-15:40:40:065  INFO 18732 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
-15:40:40:848  INFO 18732 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
-15:40:41:239  INFO 18732 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-15:40:41:829  INFO 18732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
-15:40:42:044  INFO 18732 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
-15:40:42:046  INFO 18732 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-15:40:42:062  INFO 18732 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-15:40:42:142  INFO 18732 --- [main] com.hmall.trade.TradeApplication         : Started TradeApplication in 4.134 seconds (JVM running for 4.845)
-16:42:06:349  INFO 21924 --- [main] com.hmall.trade.TradeApplication         : Starting TradeApplication using Java 11.0.24 on xiaoyuan with PID 21924 (I:\project\java\springcould\hmall\trade-service\target\classes started by 21551 in I:\project\java\springcould\hmall)
-16:42:06:351 DEBUG 21924 --- [main] com.hmall.trade.TradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
-16:42:06:351  INFO 21924 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "local"
-16:42:07:026  INFO 21924 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-16:42:07:028  INFO 21924 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-16:42:07:046  INFO 21924 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-16:42:07:243  INFO 21924 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5dddde66-cf80-384f-b1a2-3ce92099b859
-16:42:07:495  INFO 21924 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
-16:42:07:496  INFO 21924 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
-16:42:07:496  INFO 21924 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-16:42:07:496  INFO 21924 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-16:42:07:500  INFO 21924 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
-16:42:07:506  INFO 21924 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-16:42:07:506  INFO 21924 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-16:42:07:592  INFO 21924 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-16:42:07:592  INFO 21924 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1199 ms
-16:42:07:731  INFO 21924 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
-16:42:08:500  INFO 21924 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
-16:42:08:923  INFO 21924 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-16:42:09:515  INFO 21924 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
-16:42:09:736  INFO 21924 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
-16:42:09:738  INFO 21924 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-16:42:09:756  INFO 21924 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-16:42:09:839  INFO 21924 --- [main] com.hmall.trade.TradeApplication         : Started TradeApplication in 4.191 seconds (JVM running for 4.952)
-16:42:13:473  INFO 21924 --- [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-16:42:13:474  INFO 21924 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-16:42:13:475  INFO 21924 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-16:43:52:022  INFO 21924 --- [http-nio-8084-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-16:43:52:287  INFO 21924 --- [http-nio-8084-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-16:43:52:292 DEBUG 21924 --- [http-nio-8084-exec-7] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
-16:43:52:308 DEBUG 21924 --- [http-nio-8084-exec-7] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1654782927348740097(Long)
-16:43:52:331 DEBUG 21924 --- [http-nio-8084-exec-7] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
-16:44:22:558  INFO 21924 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-16:44:22:574  INFO 21924 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+11:12:13:301  INFO 16628 --- [main] com.hmall.trade.TradeApplication         : Starting TradeApplication using Java 11.0.24 on xiaoyuan with PID 16628 (I:\project\java\springcould\hmall\trade-service\target\classes started by 21551 in I:\project\java\springcould\hmall)
+11:12:13:306 DEBUG 16628 --- [main] com.hmall.trade.TradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
+11:12:13:306  INFO 16628 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "local"
+11:12:14:333  INFO 16628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+11:12:14:335  INFO 16628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11:12:14:359  INFO 16628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+11:12:14:674  INFO 16628 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=85a73006-62bd-31a5-b3aa-222c1897f7f8
+11:12:15:050  INFO 16628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+11:12:15:051  INFO 16628 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+11:12:15:051  INFO 16628 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+11:12:15:051  INFO 16628 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:12:15:054  INFO 16628 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+11:12:15:062  INFO 16628 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+11:12:15:063  INFO 16628 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+11:12:15:182  INFO 16628 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+11:12:15:182  INFO 16628 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1829 ms
+11:12:15:439  INFO 16628 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+11:12:16:316  INFO 16628 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
+11:12:16:718  INFO 16628 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+11:12:17:504  INFO 16628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
+11:12:17:748  INFO 16628 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+11:12:17:750  INFO 16628 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+11:12:17:766  INFO 16628 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+11:12:17:908  INFO 16628 --- [main] com.hmall.trade.TradeApplication         : Started TradeApplication in 5.399 seconds (JVM running for 7.221)
+11:16:12:631  INFO 9788 --- [main] com.hmall.trade.TradeApplication         : Starting TradeApplication using Java 11.0.24 on xiaoyuan with PID 9788 (I:\project\java\springcould\hmall\trade-service\target\classes started by 21551 in I:\project\java\springcould\hmall)
+11:16:12:632 DEBUG 9788 --- [main] com.hmall.trade.TradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
+11:16:12:633  INFO 9788 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "local"
+11:16:13:412  INFO 9788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+11:16:13:414  INFO 9788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11:16:13:429  INFO 9788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+11:16:13:614  INFO 9788 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=85a73006-62bd-31a5-b3aa-222c1897f7f8
+11:16:14:026  INFO 9788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+11:16:14:027  INFO 9788 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+11:16:14:027  INFO 9788 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+11:16:14:027  INFO 9788 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:16:14:033  INFO 9788 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+11:16:14:043  INFO 9788 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+11:16:14:043  INFO 9788 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+11:16:14:174  INFO 9788 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+11:16:14:174  INFO 9788 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1500 ms
+11:16:14:392  INFO 9788 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+11:16:15:559  INFO 9788 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
+11:16:16:137  INFO 9788 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+11:16:17:251  INFO 9788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
+11:16:17:583  INFO 9788 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+11:16:17:586  INFO 9788 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+11:16:17:610  INFO 9788 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+11:16:17:727  INFO 9788 --- [main] com.hmall.trade.TradeApplication         : Started TradeApplication in 5.784 seconds (JVM running for 6.526)
+11:21:01:270  INFO 13656 --- [main] com.hmall.trade.TradeApplication         : Starting TradeApplication using Java 11.0.24 on xiaoyuan with PID 13656 (I:\project\java\springcould\hmall\trade-service\target\classes started by 21551 in I:\project\java\springcould\hmall)
+11:21:01:271 DEBUG 13656 --- [main] com.hmall.trade.TradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
+11:21:01:271  INFO 13656 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "local"
+11:21:02:320  INFO 13656 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+11:21:02:323  INFO 13656 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11:21:02:366  INFO 13656 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+11:21:02:580  INFO 13656 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=aebd25e7-2360-3a2d-bf6a-2b61615e0d40
+11:21:02:909  INFO 13656 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+11:21:02:911  INFO 13656 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+11:21:02:911  INFO 13656 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+11:21:02:911  INFO 13656 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:21:02:916  INFO 13656 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+11:21:02:926  INFO 13656 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+11:21:02:926  INFO 13656 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+11:21:03:062  INFO 13656 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+11:21:03:062  INFO 13656 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1750 ms
+11:21:03:367  INFO 13656 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+11:21:04:515  INFO 13656 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
+11:21:05:569  INFO 13656 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+11:21:06:587  INFO 13656 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 78aca7a0-c87b-45c3-9a2f-d388ade0d3f7
+11:21:06:647  INFO 13656 --- [main] org.reflections.Reflections              : Reflections took 33 ms to scan 1 urls, producing 3 keys and 6 values 
+11:21:06:684  INFO 13656 --- [main] org.reflections.Reflections              : Reflections took 14 ms to scan 1 urls, producing 4 keys and 9 values 
+11:21:06:700  INFO 13656 --- [main] org.reflections.Reflections              : Reflections took 12 ms to scan 1 urls, producing 3 keys and 10 values 
+11:21:06:704  WARN 13656 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+11:21:06:715  INFO 13656 --- [main] org.reflections.Reflections              : Reflections took 10 ms to scan 1 urls, producing 1 keys and 5 values 
+11:21:06:738  INFO 13656 --- [main] org.reflections.Reflections              : Reflections took 18 ms to scan 1 urls, producing 1 keys and 7 values 
+11:21:06:755  INFO 13656 --- [main] org.reflections.Reflections              : Reflections took 13 ms to scan 1 urls, producing 2 keys and 8 values 
+11:21:06:759  WARN 13656 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+11:21:06:761  INFO 13656 --- [main] com.alibaba.nacos.common.remote.client   : [78aca7a0-c87b-45c3-9a2f-d388ade0d3f7] RpcClient init label, labels = {module=naming, source=sdk}
+11:21:06:764  INFO 13656 --- [main] com.alibaba.nacos.common.remote.client   : [78aca7a0-c87b-45c3-9a2f-d388ade0d3f7] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+11:21:06:764  INFO 13656 --- [main] com.alibaba.nacos.common.remote.client   : [78aca7a0-c87b-45c3-9a2f-d388ade0d3f7] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+11:21:06:765  INFO 13656 --- [main] com.alibaba.nacos.common.remote.client   : [78aca7a0-c87b-45c3-9a2f-d388ade0d3f7] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+11:21:06:767  INFO 13656 --- [main] com.alibaba.nacos.common.remote.client   : [78aca7a0-c87b-45c3-9a2f-d388ade0d3f7] Try to connect to server on start up, server: {serverIp = '192.168.88.129', server main port = 8848}
+11:21:08:537  INFO 13656 --- [main] com.alibaba.nacos.common.remote.client   : [78aca7a0-c87b-45c3-9a2f-d388ade0d3f7] Success to connect to server [192.168.88.129:8848] on start up, connectionId = 1725975120058_192.168.88.1_51931
+11:21:08:537  INFO 13656 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [78aca7a0-c87b-45c3-9a2f-d388ade0d3f7] Notify connected event to listeners.
+11:21:08:538  INFO 13656 --- [main] com.alibaba.nacos.common.remote.client   : [78aca7a0-c87b-45c3-9a2f-d388ade0d3f7] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+11:21:08:539  INFO 13656 --- [main] com.alibaba.nacos.common.remote.client   : [78aca7a0-c87b-45c3-9a2f-d388ade0d3f7] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1115/0x00000008007a4040
+11:21:08:595  INFO 13656 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
+11:21:08:606  INFO 13656 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP trade-service 192.168.1.3:8084 register finished
+11:21:08:945  INFO 13656 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+11:21:08:949  INFO 13656 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+11:21:08:978  INFO 13656 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+11:21:09:082  INFO 13656 --- [main] com.hmall.trade.TradeApplication         : Started TradeApplication in 8.622 seconds (JVM running for 9.436)
+11:21:09:160  INFO 13656 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [78aca7a0-c87b-45c3-9a2f-d388ade0d3f7] Receive server push request, request = NotifySubscriberRequest, requestId = 70
+11:21:09:163  INFO 13656 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [78aca7a0-c87b-45c3-9a2f-d388ade0d3f7] Ack server push request, request = NotifySubscriberRequest, requestId = 70
+11:24:50:516  INFO 13656 --- [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:24:50:516  INFO 13656 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+11:24:50:517  INFO 13656 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+11:24:50:553  INFO 13656 --- [http-nio-8084-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+11:24:50:757  INFO 13656 --- [http-nio-8084-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+11:24:50:769 DEBUG 13656 --- [http-nio-8084-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=14741770661 HTTP/1.1
+11:24:50:867 DEBUG 13656 --- [http-nio-8084-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200 (97ms)
+11:24:50:900 DEBUG 13656 --- [http-nio-8084-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+11:24:50:917 DEBUG 13656 --- [http-nio-8084-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1834795416893083650(Long), 144600(Integer), 3(Integer), 1(Long), 1(Integer)
+11:24:50:919 DEBUG 13656 --- [http-nio-8084-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+11:24:50:926 DEBUG 13656 --- [http-nio-8084-exec-1] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+11:24:50:927 DEBUG 13656 --- [http-nio-8084-exec-1] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1834795416893083650(Long), 14741770661(Long), 1(Integer), 康佳（KONKA） LED49UC3 49英寸超薄曲面36核4K HDR人工智能电视(String), {}(String), 144600(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t16477/84/2032772431/400946/2887be91/5a912776N7e343ec3.jpg!q70.jpg.webp(String)
+11:24:50:938 DEBUG 13656 --- [http-nio-8084-exec-1] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] ---> DELETE http://cart-service/carts?ids=14741770661 HTTP/1.1
+11:24:50:971 DEBUG 13656 --- [http-nio-8084-exec-1] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] <--- HTTP/1.1 200 (32ms)
+11:24:50:977 DEBUG 13656 --- [http-nio-8084-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> PUT http://item-service/items/stock/deduct HTTP/1.1
+11:24:50:994 DEBUG 13656 --- [http-nio-8084-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- HTTP/1.1 200 (16ms)
+11:24:51:129 DEBUG 13656 --- [http-nio-8084-exec-2] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+11:24:51:129 DEBUG 13656 --- [http-nio-8084-exec-2] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1834795416893083650(Long)
+11:24:51:140 DEBUG 13656 --- [http-nio-8084-exec-2] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+11:24:51:362  INFO 13656 --- [nacos-grpc-client-executor-71] com.alibaba.nacos.common.remote.client   : [78aca7a0-c87b-45c3-9a2f-d388ade0d3f7] Receive server push request, request = NotifySubscriberRequest, requestId = 82
+11:24:51:363  INFO 13656 --- [nacos-grpc-client-executor-71] com.alibaba.nacos.common.remote.client   : [78aca7a0-c87b-45c3-9a2f-d388ade0d3f7] Ack server push request, request = NotifySubscriberRequest, requestId = 82
+11:24:51:462  INFO 13656 --- [nacos-grpc-client-executor-72] com.alibaba.nacos.common.remote.client   : [78aca7a0-c87b-45c3-9a2f-d388ade0d3f7] Receive server push request, request = NotifySubscriberRequest, requestId = 83
+11:24:51:463  INFO 13656 --- [nacos-grpc-client-executor-72] com.alibaba.nacos.common.remote.client   : [78aca7a0-c87b-45c3-9a2f-d388ade0d3f7] Ack server push request, request = NotifySubscriberRequest, requestId = 83
+12:08:01:294  INFO 13656 --- [nacos-grpc-client-executor-634] com.alibaba.nacos.common.remote.client   : [78aca7a0-c87b-45c3-9a2f-d388ade0d3f7] Receive server push request, request = ClientDetectionRequest, requestId = 89
+12:08:01:295  INFO 13656 --- [nacos-grpc-client-executor-634] com.alibaba.nacos.common.remote.client   : [78aca7a0-c87b-45c3-9a2f-d388ade0d3f7] Ack server push request, request = ClientDetectionRequest, requestId = 89
+12:08:21:962  WARN 13656 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m406ms498µs).
