@@ -3,6 +3,7 @@ package com.hmall.cart.service.impl;
 import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.hmall.cart.config.CartProperties;
 import com.hmall.cart.domain.dto.CartFormDTO;
 import com.hmall.cart.domain.po.Cart;
 import com.hmall.cart.domain.vo.CartVO;
@@ -16,6 +17,7 @@ import com.hmall.api.client.ItemClient;
 import com.hmall.api.domain.dto.ItemDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Collection;
 import java.util.List;
@@ -39,6 +41,7 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
 //    private final RestTemplate restTemplate;
 //    private final DiscoveryClient discoveryClient;
     private final ItemClient itemClient;
+    private final CartProperties cartProperties;
 
     @Override
     public void addItem2Cart(CartFormDTO cartFormDTO) {
@@ -126,6 +129,7 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
     }
 
     @Override
+    @Transactional
     public void removeByItemIds(Collection<Long> itemIds) {
         // 1.构建删除条件，userId和itemId
         QueryWrapper<Cart> queryWrapper = new QueryWrapper<Cart>();
@@ -138,8 +142,9 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
 
     private void checkCartsFull(Long userId) {
         int count = lambdaQuery().eq(Cart::getUserId, userId).count();
-        if (count >= 10) {
-            throw new BizIllegalException(StrUtil.format("用户购物车课程不能超过{}", 10));
+        Integer maxAmount = cartProperties.getMaxAmount();
+        if (count >= maxAmount) {
+            throw new BizIllegalException(StrUtil.format("用户购物车课程不能超过{}", maxAmount));
         }
     }
 
